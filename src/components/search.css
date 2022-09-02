@@ -5,14 +5,96 @@
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: rgba(22, 21, 21, 0.7);
     flex-direction: column;
 
 }
 
+#search .close {
+
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    cursor: pointer;
+
+}
+
 .input {
+    align-self: center;
     display: flex;
     align-items: center;
+    position: relative;
+
+
+}
+
+.input::after {
+    content: " ";
+    position: absolute;
+    bottom: -6px;
+    animation-name: search-slide;
+    animation-duration: 0.5s;
+
+}
+
+@keyframes search-slide {
+
+
+    0% {
+        border: solid white 1px;
+        width: 1%;
+
+    }
+
+    15% {
+
+        border: solid white 1px;
+        width: 20%;
+    }
+
+    30% {
+
+        border: solid white 1px;
+        width: 40%;
+    }
+
+    45% {
+
+        border: solid white 1px;
+        width: 60%;
+    }
+
+    60% {
+
+        border: solid white 1px;
+        width: 40%;
+    }
+
+    75% {
+
+        border: solid white 1px;
+        width: 20%;
+    }
+
+
+    100% {
+
+        border: solid white 1px;
+        width: 0%;
+    }
+
+}
+
+.input input {
+    padding-left: 0.5rem;
+    font-family: "Montserrat SemiBold";
+    font-weight: 600;
+
+
+}
+
+.search-logo {
+    min-height: 100%;
+    padding-top: 0.3rem;
 }
