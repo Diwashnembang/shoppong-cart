@@ -1,0 +1,13 @@
+* {
+    --text-color: white;
+    --primary-font: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    all: unset;
+}

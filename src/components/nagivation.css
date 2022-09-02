@@ -1,0 +1,30 @@
+header #nagivation {
+    font-family: var(--primiary-font);
+    color: var(--text-color);
+    background: black;
+}
+
+#home {
+    letter-spacing: 5px;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Montserrat Medium";
+    margin: 1.3rem 0;
+    cursor: pointer;
+}
+
+nav .shop {
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    min-width: 100vw;
+    justify-content: space-around;
+    margin-top: 4rem;
+
+}
+
+nav ul li {
+    cursor: pointer;
+}

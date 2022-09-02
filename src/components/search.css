@@ -1,0 +1,18 @@
+#search {
+    position: absolute;
+    top: 0;
+    /* text-align: center; */
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(22, 21, 21, 0.7);
+    flex-direction: column;
+
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
