@@ -9,7 +9,7 @@ const Nagivation = () => {
     const [isSearchCllicked, setIsSearchClicked] = useState(false);
 
     const handleClickOnSearch = (e) => {
-        setIsSearchClicked(!isSearchCllicked);
+        setIsSearchClicked(true);
     }
 
 
@@ -19,7 +19,7 @@ const Nagivation = () => {
                 <Link to={"/"}> <div id="home">HOME</div></Link>
                 <ul id="nagivate">
                     <Link to={"./shop"}><li className='nagivate-text shop'>Shop</li></Link>
-                    <li className='nagivate-text search' onClick={handleClickOnSearch}>
+                    <li className='nagivate-text search' onClick={handleClickOnSearch} data-testid="search">
                         <SearchIcon fontSize='large' />
                     </li>
                     <li className='nagivate-text Cart'>Cart</li>

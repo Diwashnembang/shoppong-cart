@@ -12,7 +12,9 @@ const SearchProduct = (props) => {
     }
     return (
         <div id='search'>
-            <section className='close' onClick={handleCloseClick}><CloseIcon fontSize='large' /></section>
+            <section className='close' onClick={handleCloseClick} data-testid="close">
+                <CloseIcon fontSize='large' />
+            </section>
 
             <section className="input">
                 <div className="search-logo">
