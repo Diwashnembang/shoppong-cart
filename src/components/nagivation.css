@@ -36,8 +36,11 @@ nav ul li {
         grid-template-columns: repeat(8, 1fr);
         grid-template-areas: ". titile . . . link link link";
         column-gap: 40px;
-        margin: 50px 80px;
 
+    }
+
+    header {
+        margin: 50px 80px;
     }
 
     nav ul {
