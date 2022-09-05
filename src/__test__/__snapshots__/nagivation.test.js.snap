@@ -45,7 +45,7 @@ exports[`Nagivation Component renders search when clicked 1`] = `
           </svg>
         </li>
         <li
-          class="nagivate-text Cart"
+          class="nagivate-text cart"
         >
           Cart
         </li>

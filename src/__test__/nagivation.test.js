@@ -11,7 +11,7 @@ describe("Nagivation Component", () => {
         expect(container).toMatchSnapshot();
     })
 
-    it("should not contian search div", () => {
+    it("should not contian search div without search is clicked", () => {
         render(<Nagivation />, { wrapper: BrowserRouter });
         const closeIconElement = screen.queryByTestId("close");
         expect(closeIconElement).toBeFalsy();

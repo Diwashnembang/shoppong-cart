@@ -1,7 +1,6 @@
 header #nagivation {
     font-family: var(--primiary-font);
     color: var(--text-color);
-    background: black;
 }
 
 #home {
@@ -28,4 +27,36 @@ nav ul {
 
 nav ul li {
     cursor: pointer;
+
+}
+
+@media screen and (min-width : 750px) {
+    header #nagivation {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: ". titile . . . link link link";
+        column-gap: 40px;
+        margin: 50px 80px;
+
+    }
+
+    nav ul {
+        grid-area: link;
+        margin: 0;
+        min-width: 100%;
+    }
+
+    #home {
+        grid-area: title;
+    }
+
+    nav ul li {
+        margin: 0 3rem;
+    }
+
+    .cart {
+        margin-right: 5rem;
+
+    }
+
 }

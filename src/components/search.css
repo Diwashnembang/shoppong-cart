@@ -8,6 +8,7 @@
     justify-content: center;
     background-color: rgba(22, 21, 21, 0.7);
     flex-direction: column;
+    color: white;
 
 }
 
@@ -25,7 +26,7 @@
     display: flex;
     align-items: center;
     position: relative;
-
+    padding-left: 13%;
 
 }
 
@@ -97,4 +98,14 @@
 .search-logo {
     min-height: 100%;
     padding-top: 0.3rem;
+}
+
+
+@media screen and (min-width:750px) {
+    #search {
+        font-size: 25px;
+    }
+
+
+
 }

@@ -14,20 +14,22 @@ const Nagivation = () => {
 
 
     return (
-        <header>
-            <nav id='nagivation'>
-                <Link to={"/"}> <div id="home">HOME</div></Link>
-                <ul id="nagivate">
-                    <Link to={"./shop"}><li className='nagivate-text shop'>Shop</li></Link>
-                    <li className='nagivate-text search' onClick={handleClickOnSearch} data-testid="search">
-                        <SearchIcon fontSize='large' />
-                    </li>
-                    <li className='nagivate-text Cart'>Cart</li>
-                    {isSearchCllicked ? <SearchProduct showSearch={setIsSearchClicked} /> : null}
+        <>
+            <header>
+                <nav id='nagivation'>
+                    <Link to={"/"}> <div id="home">HOME</div></Link>
+                    <ul id="nagivate">
+                        <Link to={"./shop"}><li className='nagivate-text shop'>Shop</li></Link>
+                        <li className='nagivate-text search' onClick={handleClickOnSearch} data-testid="search">
+                            <SearchIcon fontSize='large' />
+                        </li>
+                        <li className='nagivate-text cart'>Cart</li>
 
-                </ul>
-            </nav>
-        </header>
+                    </ul>
+                </nav>
+            </header>
+            {isSearchCllicked ? <SearchProduct showSearch={setIsSearchClicked} /> : null}
+        </>
     )
 }
 

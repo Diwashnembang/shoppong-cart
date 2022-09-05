@@ -1,12 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("./assets/electronics/geforce-rtx-3080-ti.jpg");
   background-color: black;
   background-repeat: no-repeat;
-  background-size: 100vh 200px;
-  background-position: right center;
+  background-size: contain;
+  background-position: center center;
   min-height: 100vh;
+
 }
 
 ul {
