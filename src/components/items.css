@@ -1,8 +1,8 @@
-#selected-item {
-    color: green;
-}
-
 input {
-    all: unset;
-    color: green;
+  all: unset;
+  color: black;
+}
+img {
+  width: 100px;
+  height: 100px;
 }

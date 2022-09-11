@@ -1,7 +1,32 @@
+/* todo designe cart */
 #cart {
   position: absolute;
   top: 0;
   min-width: 100vw;
   min-height: 100vh;
   background-color: #c4c4c4;
+  overflow: hidden;
+}
+
+.close-cart {
+  text-align: end;
+  margin: 4rem 4rem 0 0;
+  cursor: pointer;
+}
+
+.block {
+  display: block;
+}
+
+#cart-title,
+#show-items {
+  padding: 0 0 0 3rem;
+}
+
+#cart-title {
+  font-weight: 600;
+}
+
+h1{
+  font-family: 'Montserrat SemiBold';
 }
