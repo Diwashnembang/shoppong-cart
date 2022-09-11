@@ -17,7 +17,7 @@ const Items = ({ item }) => {
   }
 
   useEffect(() => {
-    if (noOfItems > 1) {
+    if (noOfItems >= 1) {
       setPrice((prev) => +noOfItems * item.price)
     }
   }, [noOfItems])
