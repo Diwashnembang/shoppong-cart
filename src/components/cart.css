@@ -1,5 +1,7 @@
 #cart{
   position:absolute;
+  top: 0;
   min-width:100vw;
-  mim-height: 100vh;
+  min-height: 100vh;
+  background-color: #c4c4c4;
 }
