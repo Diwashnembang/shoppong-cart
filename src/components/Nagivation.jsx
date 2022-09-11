@@ -6,31 +6,31 @@ import SearchProduct from './SearchProduct'
 import './nagivation.css'
 
 const Nagivation = () => {
-    const [isSearchCllicked, setIsSearchClicked] = useState(false);
+  const [isSearchCllicked, setIsSearchClicked] = useState(false);
 
-    const handleClickOnSearch = (e) => {
-        setIsSearchClicked(true);
-    }
+  const handleClickOnSearch = (e) => {
+    setIsSearchClicked(true);
+  }
 
 
-    return (
-        <>
-            <header>
-                <nav id='nagivation'>
-                    <Link to={"/"}> <div id="home">HOME</div></Link>
-                    <ul id="nagivate">
-                        <Link to={"./shop"}><li className='nagivate-text shop'>Shop</li></Link>
-                        <li className='nagivate-text search' onClick={handleClickOnSearch} data-testid="search">
-                            <SearchIcon fontSize='large' />
-                        </li>
-                        <li className='nagivate-text cart'>Cart</li>
+  return (
+    <>
+      <header>
+        <nav id='nagivation'>
+          <Link to={"/"}> <div id="home">HOME</div></Link>
+          <ul id="nagivate">
+            <Link to={"./shop"}><li className='nagivate-text shop'>Shop</li></Link>
+            <li className='nagivate-text search' onClick={handleClickOnSearch} data-testid="search">
+              <SearchIcon fontSize='large' />
+            </li>
+            <li className='nagivate-text cart'>Cart</li>
 
-                    </ul>
-                </nav>
-            </header>
-            {isSearchCllicked ? <SearchProduct showSearch={setIsSearchClicked} /> : null}
-        </>
-    )
+          </ul>
+        </nav>
+      </header>
+      {isSearchCllicked ? <SearchProduct showSearch={setIsSearchClicked} /> : null}
+    </>
+  )
 }
 
 export default Nagivation
