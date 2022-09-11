@@ -36,8 +36,8 @@ const Items = ({ item }) => {
                 </div>
             </div>
             <div className="upadate-no-of-item">
-                <div className="add" onClick={add}>
-                    <button type="button">+</button>
+                <div className="add" >
+                    <button type="button" onClick={add}>+</button>
                 </div>
 
                 <input type="text"
@@ -47,8 +47,8 @@ const Items = ({ item }) => {
                     onChange={noOfItemChange}
                 />
 
-                <div className="remove" onClick={remove} >
-                    <button type="button">-</button>
+                <div className="remove"  >
+                    <button type="button"onClick={remove}>-</button>
                 </div>
             </div>
         </>
