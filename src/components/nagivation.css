@@ -30,6 +30,9 @@ nav ul li {
 
 }
 
+.cart{
+  cursor:pointer;
+}
 @media screen and (min-width : 750px) {
     header #nagivation {
         display: grid;

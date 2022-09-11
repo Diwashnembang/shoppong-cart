@@ -5,13 +5,16 @@ import { Link } from 'react-router-dom'
 import SearchProduct from './SearchProduct'
 import './nagivation.css'
 
-const Nagivation = () => {
+const Nagivation = ({setIsCartClicked}) => {
   const [isSearchCllicked, setIsSearchClicked] = useState(false);
 
   const handleClickOnSearch = (e) => {
     setIsSearchClicked(true);
   }
 
+  const showCart = ()=>{
+    setIsCartClicked(true);
+  }
 
   return (
     <>
@@ -23,7 +26,7 @@ const Nagivation = () => {
             <li className='nagivate-text search' onClick={handleClickOnSearch} data-testid="search">
               <SearchIcon fontSize='large' />
             </li>
-            <li className='nagivate-text cart'>Cart</li>
+            <li className='nagivate-text cart' onClick={showCart}>Cart</li>
 
           </ul>
         </nav>
