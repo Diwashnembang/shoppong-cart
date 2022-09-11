@@ -14,7 +14,8 @@ function App() {
     <div className='App'>
       {/* when cart is clicked from nagivation it setIsCartClicked = true */} 
       <Nagivation setIsCartClicked={setIsCartClicked} />  
-      {isCartClicked ? <Cart /> : null}
+      {/* carts take items to render item and setIsCartClicked to close cart when closed is clcked */}
+      {isCartClicked ? <Cart items={[]} setIsCartClicked={setIsCartClicked}/> : null}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/shop' element={<Shop />} />
