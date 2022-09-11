@@ -24,7 +24,7 @@ const Items = ({ item }) => {
     }, [noOfItems])
     return (
         <>
-            <div id='selected-item'>
+            <div className='selected-item'>
                 <div className="selectd-item-img" data-testid="selectd-item-img">
                     <img src={`${item.src}`} alt={`image of ${item.name}`} />
                 </div>
@@ -35,14 +35,14 @@ const Items = ({ item }) => {
                     {price}
                 </div>
             </div>
-            <div id="upadate-no-of-item">
+            <div className="upadate-no-of-item">
                 <div className="add" onClick={add}>
                     <button type="button">+</button>
                 </div>
 
                 <input type="text"
                     name="no-of-item"
-                    id="no-of-item"
+                    className="no-of-item"
                     value={noOfItems}
                     onChange={noOfItemChange}
                 />
