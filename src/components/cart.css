@@ -9,14 +9,14 @@
   overflow: hidden;
 }
 
-.slide-right{
+.slide-right {
   animation-name: slide-right;
   animation-fill-mode: forwards;
   animation-duration: 1s;
 }
 
-.slide-left{
-  animation-name:slide-left;
+.slide-left {
+  animation-name: slide-left;
   animation-duration: 1s;
 }
 
@@ -29,10 +29,15 @@
   }
 }
 
-@keyframes slide-left{
-  from{left:0vw;}
-  to{left:100vw;}
+@keyframes slide-left {
+  from {
+    left: 0vw;
+  }
+  to {
+    left: 100vw;
+  }
 }
+
 .close-cart {
   text-align: end;
   margin: 4rem 4rem 0 0;
@@ -54,4 +59,28 @@
 
 h1 {
   font-family: 'Montserrat SemiBold';
+}
+
+@media screen and (min-width: 750px) {
+  #cart {
+    min-width: 30vw;
+  }
+
+  @keyframes slide-right {
+    from {
+      left: 100vw;
+    }
+    to {
+      left: calc(100vw - 30vw);
+    }
+  }
+
+  @keyframes slide-left {
+    from {
+      left: calc(100vw - 30vw);
+    }
+    to {
+      left: 100vw;
+    }
+  }
 }
