@@ -20,7 +20,7 @@
   all: unset;
   cursor: pointer;
 }
-img {
+.selectd-item-img img {
   width: 30px;
   height: 30px;
 }
