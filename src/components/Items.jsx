@@ -13,7 +13,7 @@ const Items = ({ item, setRemoveItem }) => {
   }
 
   const noOfItemChange = (e) => {
-    setNoOfItems((prev) => +e.target.value)
+    setNoOfItems((prev) => e.target.value)
   }
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Items = ({ item, setRemoveItem }) => {
       setPrice((prev) => +noOfItems * item.price)
     }
 
-    if (noOfItems <= 0) {
+    if (noOfItems <= 0 && noOfItems !== '') {
       /* mangae removeItem  in cart component */
       setRemoveItem(item)
     }
