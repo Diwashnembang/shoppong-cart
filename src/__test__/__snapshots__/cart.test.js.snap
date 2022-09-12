@@ -6,6 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
+        class="slide-right"
         id="cart"
       >
         <div
@@ -114,6 +115,7 @@ Object {
   </body>,
   "container": <div>
     <div
+      class="slide-right"
       id="cart"
     >
       <div

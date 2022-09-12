@@ -8,14 +8,14 @@ import Items from './Items'
 const Cart = ({ items, setIsCartClicked }) => {
   /* todo first write test for cart to check aniamtion end and state */
   /* manage a state to know if animation is requkired */
-  const [isanimationStart, setIsAnimationStart] = useState(true)
+  const [isAnimationStart, setIsAnimationStart] = useState(true)
 
   const closeCart = () => {
     setIsAnimationStart(false)
   }
 
   const handleAnimationEnd = () => {
-    if (!isanimationStart) {
+    if (!isAnimationStart) {
       /* sets is setIsCartClicked to false so that the app component doesnot render */
       setIsCartClicked(false)
     }
@@ -23,7 +23,7 @@ const Cart = ({ items, setIsCartClicked }) => {
   return (
     <div
       id='cart'
-      className={isanimationStart ? 'slide-right' : 'slide-left'}
+      className={isAnimationStart ? 'slide-right' : 'slide-left'}
       onAnimationEnd={handleAnimationEnd}
     >
       <div className='close-cart' onClick={closeCart} data-testid='close-cart'>
