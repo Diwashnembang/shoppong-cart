@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './items.css'
-const Items = ({ item }) => {
+const Items = ({ item, setRemoveItem }) => {
   const [noOfItems, setNoOfItems] = useState(1)
   const [price, setPrice] = useState(+item.price)
 
@@ -20,8 +20,12 @@ const Items = ({ item }) => {
     if (noOfItems >= 1) {
       setPrice((prev) => +noOfItems * item.price)
     }
-  }, [noOfItems])
 
+    if (noOfItems <= 0) {
+      /* mangae removeItem  in cart component */
+      setRemoveItem(item)
+    }
+  }, [noOfItems])
 
   return (
     <>

@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close'
 
 import './cart.css'
 
 import Items from './Items'
+import removeFromItem from '../removeFromItem'
 
-const Cart = ({ items, setIsCartClicked }) => {
+const Cart = ({ items, setIsCartClicked, setItems }) => {
   /* manage a state to know if animation is requkired */
   const [isAnimationStart, setIsAnimationStart] = useState(true)
-
+  /* mangge state to remove item form the array setRemoveItem from items component*/
+  const [removeItem, setRemoveItem] = useState({})
   const closeCart = () => {
     setIsAnimationStart(false)
   }
@@ -19,12 +21,17 @@ const Cart = ({ items, setIsCartClicked }) => {
       setIsCartClicked(false)
     }
   }
+
+  useEffect(() => {
+    /* setItem chages items in app component and remove item comes form item component)  */
+    setItems(removeFromItem(items, removeItem.id))
+  }, [removeItem])
   return (
     <div
       id='cart'
       className={isAnimationStart ? 'slide-right' : 'slide-left'}
       onAnimationEnd={handleAnimationEnd}
-      data-testid="cart-div"
+      data-testid='cart-div'
     >
       <div className='close-cart' onClick={closeCart} data-testid='close-cart'>
         <CloseIcon fontSize='large' />
@@ -39,7 +46,7 @@ const Cart = ({ items, setIsCartClicked }) => {
       <div id='show-items'>
         {items.map((element, index) => (
           <div className='item' key={index} data-testid='show-items'>
-            <Items item={element} />
+            <Items item={element} setRemoveItem={setRemoveItem} />
           </div>
         ))}
       </div>
