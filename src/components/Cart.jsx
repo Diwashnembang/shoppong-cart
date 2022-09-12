@@ -6,7 +6,6 @@ import './cart.css'
 import Items from './Items'
 
 const Cart = ({ items, setIsCartClicked }) => {
-  /* todo first write test for cart to check aniamtion end and state */
   /* manage a state to know if animation is requkired */
   const [isAnimationStart, setIsAnimationStart] = useState(true)
 
@@ -25,6 +24,7 @@ const Cart = ({ items, setIsCartClicked }) => {
       id='cart'
       className={isAnimationStart ? 'slide-right' : 'slide-left'}
       onAnimationEnd={handleAnimationEnd}
+      data-testid="cart-div"
     >
       <div className='close-cart' onClick={closeCart} data-testid='close-cart'>
         <CloseIcon fontSize='large' />

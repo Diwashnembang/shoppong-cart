@@ -7,6 +7,7 @@ Object {
     <div>
       <div
         class="slide-right"
+        data-testid="cart-div"
         id="cart"
       >
         <div
@@ -116,6 +117,7 @@ Object {
   "container": <div>
     <div
       class="slide-right"
+      data-testid="cart-div"
       id="cart"
     >
       <div
