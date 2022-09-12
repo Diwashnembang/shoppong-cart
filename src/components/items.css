@@ -31,6 +31,10 @@ img {
   justify-content: space-between;
   padding-right: 3rem;
 }
+.selected-item-price {
+  max-width: 12vw;
+  overflow-wrap: break-word;
+}
 
 .upadate-no-of-item {
   display: flex;
