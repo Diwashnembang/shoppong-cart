@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close'
 
 import './cart.css'
@@ -6,14 +6,27 @@ import './cart.css'
 import Items from './Items'
 
 const Cart = ({ items, setIsCartClicked }) => {
-  /* sets is setIsCartClicked to false so that the app component doesnot render */
-  /* cart  */
+  /* todo first write test for cart to check aniamtion end and state */
+  /* manage a state to know if animation is requkired */
+  const [isanimationStart, setIsAnimationStart] = useState(true)
+
   const closeCart = () => {
-    setIsCartClicked(false)
+    setIsAnimationStart(false)
+  }
+
+  const handleAnimationEnd = () => {
+    if (!isanimationStart) {
+      /* sets is setIsCartClicked to false so that the app component doesnot render */
+      setIsCartClicked(false)
+    }
   }
   return (
-    <div id='cart'>
-      <div className='close-cart' onClick={closeCart} data-testid="close-cart">
+    <div
+      id='cart'
+      className={isanimationStart ? 'slide-right' : 'slide-left'}
+      onAnimationEnd={handleAnimationEnd}
+    >
+      <div className='close-cart' onClick={closeCart} data-testid='close-cart'>
         <CloseIcon fontSize='large' />
       </div>
       <div id='cart-title'>
@@ -23,9 +36,9 @@ const Cart = ({ items, setIsCartClicked }) => {
           <span className='block'>Bag</span>
         </h1>
       </div>
-      <div id='show-items' >
+      <div id='show-items'>
         {items.map((element, index) => (
-          <div className='item' key={index} data-testid="show-items">
+          <div className='item' key={index} data-testid='show-items'>
             <Items item={element} />
           </div>
         ))}

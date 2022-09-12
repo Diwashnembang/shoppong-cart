@@ -1,13 +1,38 @@
 /* todo make this responsive*/
+
 #cart {
   position: absolute;
   top: 0;
   min-width: 100vw;
   min-height: 100vh;
-  background-color:#f8f5f2 ;
+  background-color: #f8f5f2;
   overflow: hidden;
 }
 
+.slide-right{
+  animation-name: slide-right;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.slide-left{
+  animation-name:slide-left;
+  animation-duration: 1s;
+}
+
+@keyframes slide-right {
+  from {
+    left: 100vw;
+  }
+  to {
+    left: 0vw;
+  }
+}
+
+@keyframes slide-left{
+  from{left:0vw;}
+  to{left:100vw;}
+}
 .close-cart {
   text-align: end;
   margin: 4rem 4rem 0 0;
