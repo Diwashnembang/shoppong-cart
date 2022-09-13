@@ -1,0 +1,23 @@
+#shop {
+  display: flex;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+#shop .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+}
+
+@media screen and (min-width: 750px) {
+  #shop {
+    margin: 0 80px;
+  }
+  #shop .products {
+    max-width: 1400px;
+    justify-content: start;
+  }
+}
