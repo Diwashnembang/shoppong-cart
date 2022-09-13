@@ -4,7 +4,19 @@
   flex-grow: 1;
   flex-shrink: 1;
 }
+.product-card .product-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 20px;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
+.product-card .product-price {
+  padding-top: 13px;
+}
 .product-card .product-image {
   background-color: #c4c4c4;
   display: flex;
