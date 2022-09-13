@@ -6,18 +6,10 @@ import Shop from './components/Shop'
 import Cart from './components/Cart'
 import { useState } from 'react'
 
-const mock = {
-  id: '001',
-  src: 'assets/electronics/71Dc5Fh6kFL._AC_UY218_.jpg',
-  price: '400',
-  name: 'Graphic Card',
-}
 
 function App() {
   const [isCartClicked, setIsCartClicked] = useState(false)
-  const [items, setItems] = useState([
-    mock,
-  ]) /* change items throug shop components and cart components. Pass items to cart*/
+  const [items, setItems] = useState([]) /* change items throug shop components and cart components. Pass items to cart*/
   return (
     <div className='App'>
       {/* when cart is clicked from nagivation it setIsCartClicked = true */}
