@@ -1,13 +1,14 @@
-
 #cart {
   position: absolute;
   top: 0;
-  min-width: 100vw;
-  min-height: 100vh;
   background-color: #f8f5f2;
-  overflow: hidden;
 }
 
+#show-items {
+  max-height: 60vh;
+  position: relative;
+  overflow-y: scroll;
+}
 .slide-right {
   animation-name: slide-right;
   animation-fill-mode: forwards;
