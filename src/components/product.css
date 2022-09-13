@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 750px) {
   .product-card {
-    margin: 24px;
+    margin: 0 24px 0 24px;
   }
   .product-card,
   .product-image {
