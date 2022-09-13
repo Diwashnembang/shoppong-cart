@@ -1,111 +1,89 @@
 #search {
-    position: absolute;
-    top: 0;
-    /* text-align: center; */
-    min-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(22, 21, 21, 0.7);
-    flex-direction: column;
-    color: white;
-
+  position: absolute;
+  top: 0;
+  /* text-align: center; */
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(22, 21, 21, 1);
+  flex-direction: column;
+  color: white;
 }
 
 #search .close {
-
-    position: absolute;
-    top: 5rem;
-    right: 5rem;
-    cursor: pointer;
-
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  cursor: pointer;
 }
 
 .input {
-    align-self: center;
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding-left: 13%;
-
+  align-self: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 13%;
 }
 
 .input::after {
-    content: " ";
-    position: absolute;
-    bottom: -6px;
-    animation-name: search-slide;
-    animation-duration: 0.5s;
-
+  content: ' ';
+  position: absolute;
+  bottom: -6px;
+  animation-name: search-slide;
+  animation-duration: 0.5s;
 }
 
 @keyframes search-slide {
+  0% {
+    border: solid white 1px;
+    width: 1%;
+  }
 
+  15% {
+    border: solid white 1px;
+    width: 20%;
+  }
 
-    0% {
-        border: solid white 1px;
-        width: 1%;
+  30% {
+    border: solid white 1px;
+    width: 40%;
+  }
 
-    }
+  45% {
+    border: solid white 1px;
+    width: 60%;
+  }
 
-    15% {
+  60% {
+    border: solid white 1px;
+    width: 40%;
+  }
 
-        border: solid white 1px;
-        width: 20%;
-    }
+  75% {
+    border: solid white 1px;
+    width: 20%;
+  }
 
-    30% {
-
-        border: solid white 1px;
-        width: 40%;
-    }
-
-    45% {
-
-        border: solid white 1px;
-        width: 60%;
-    }
-
-    60% {
-
-        border: solid white 1px;
-        width: 40%;
-    }
-
-    75% {
-
-        border: solid white 1px;
-        width: 20%;
-    }
-
-
-    100% {
-
-        border: solid white 1px;
-        width: 0%;
-    }
-
+  100% {
+    border: solid white 1px;
+    width: 0%;
+  }
 }
 
 .input input {
-    padding-left: 0.5rem;
-    font-family: "Montserrat SemiBold";
-    font-weight: 600;
-
-
+  padding-left: 0.5rem;
+  font-family: 'Montserrat SemiBold';
+  font-weight: 600;
 }
 
 .search-logo {
-    min-height: 100%;
-    padding-top: 0.3rem;
+  min-height: 100%;
+  padding-top: 0.3rem;
 }
 
-
-@media screen and (min-width:750px) {
-    #search {
-        font-size: 25px;
-    }
-
-
-
+@media screen and (min-width: 750px) {
+  #search {
+    font-size: 25px;
+  }
 }
