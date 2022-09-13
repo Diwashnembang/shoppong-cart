@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 import './shop.css'
 import Product from './Product'
@@ -45,9 +45,20 @@ const products = [
 function Shop({ setItems }) {
   /* todo write function to update of App component to update cart  */
   const [itemsOnCart, setitemsOnCart] = useState({})
+  const [addedToCartNotificaton, setalert] = useState(false)
+  const initialRun = useRef(true)
   useEffect(() => {
-    setItems((prev) => [...prev, itemsOnCart])
+    if (!(Object.keys(itemsOnCart) <= 0)) {
+      setItems((prev) => [...prev, itemsOnCart])
+      initialRun.current = false
+      setalert(!addedToCartNotificaton)
+    }
   }, [itemsOnCart])
+
+  useEffect(() => {
+    if (!initialRun.current)
+      alert(`${itemsOnCart.name} has been added to the cart`)
+  }, [addedToCartNotificaton])
   return (
     <div id='shop'>
       <div className='products'>
