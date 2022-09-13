@@ -32,6 +32,7 @@ const Cart = ({ items, setIsCartClicked, setItems }) => {
       className={isAnimationStart ? 'slide-right' : 'slide-left'}
       onAnimationEnd={handleAnimationEnd}
       data-testid='cart-div'
+      style={{minHeight : document.documentElement.scrollHeight}}
     >
       <div className='close-cart' onClick={closeCart} data-testid='close-cart'>
         <CloseIcon fontSize='large' />
