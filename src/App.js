@@ -6,10 +6,11 @@ import Shop from './components/Shop'
 import Cart from './components/Cart'
 import { useState } from 'react'
 
-
 function App() {
   const [isCartClicked, setIsCartClicked] = useState(false)
-  const [items, setItems] = useState([]) /* change items throug shop components and cart components. Pass items to cart*/
+  const [items, setItems] = useState(
+    []
+  ) /* change items throug shop components and cart components. Pass items to cart*/
   return (
     <div className='App'>
       {/* when cart is clicked from nagivation it setIsCartClicked = true */}
