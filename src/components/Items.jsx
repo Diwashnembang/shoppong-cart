@@ -37,16 +37,15 @@ const Items = ({ item, setRemoveItem }) => {
           <p>{item.name}</p>
         </div>
         <div className='selected-item-price' data-testid='selected-item-price'>
-          {price}
+          $ {price}
         </div>
       </div>
       <div className='upadate-no-of-item'>
-        <div className='add'>
-          <button type='button' onClick={add}>
-            +
+        <div className='remove'>
+          <button type='button' onClick={remove}>
+            -
           </button>
         </div>
-
         <input
           type='text'
           name='no-of-item'
@@ -54,10 +53,9 @@ const Items = ({ item, setRemoveItem }) => {
           value={noOfItems}
           onChange={noOfItemChange}
         />
-
-        <div className='remove'>
-          <button type='button' onClick={remove}>
-            -
+        <div className='add'>
+          <button type='button' onClick={add}>
+            +
           </button>
         </div>
       </div>
