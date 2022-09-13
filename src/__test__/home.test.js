@@ -4,7 +4,7 @@ import Home from '../components/Home'
 
 describe('Home component', () => {
   it('should render properly', () => {
-    const container = render(<Home />, { wrapper: BrowserRouter });
-    expect(container).toMatchSnapshot();
+    const container = render(<Home />, { wrapper: BrowserRouter })
+    expect(container).toMatchSnapshot()
   })
 })
