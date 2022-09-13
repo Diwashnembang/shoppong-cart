@@ -44,11 +44,13 @@ const Cart = ({ items, setIsCartClicked, setItems }) => {
         </h1>
       </div>
       <div id='show-items'>
-        {items.map((element, index) => (
-          <div className='item' key={index} data-testid='show-items'>
-            <Items item={element} setRemoveItem={setRemoveItem} />
-          </div>
-        ))}
+        {!items.length <= 0
+          ? items.map((element, index) => (
+              <div className='item' key={index} data-testid='show-items'>
+                <Items item={element} setRemoveItem={setRemoveItem} />
+              </div>
+            ))
+          : 'Your Bag Is Empty'}
       </div>
     </div>
   )
