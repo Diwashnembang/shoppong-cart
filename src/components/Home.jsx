@@ -10,7 +10,7 @@ const Home = () => {
         <section className='main-product-info'>
           <h1>Nvidia GeForce RTX 3080 </h1>
           <h3>Preorder Now </h3>
-          <Link to={'./Shop'}>
+          <Link to={'/shoppong-cart/Shop'}>
             <button type='button'>Shop Now</button>
           </Link>
         </section>

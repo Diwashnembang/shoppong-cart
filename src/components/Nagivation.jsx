@@ -20,12 +20,11 @@ const Nagivation = ({ setIsCartClicked }) => {
     <>
       <header>
         <nav id='nagivation'>
-          <Link to={'/'}>
-            {' '}
+          <Link to={'/shoppong-cart'}>
             <div id='home'>HOME</div>
           </Link>
           <ul id='nagivate'>
-            <Link to={'./shop'}>
+            <Link to={'/shoppong-cart/shop'}>
               <li className='nagivate-text shop'>Shop</li>
             </Link>
             <li

@@ -24,10 +24,9 @@ function App() {
         />
       ) : null}
       <Routes>
-        <Route path='/' element={<Home />} />
         <Route path='/shoppong-cart' element={<Home />} />
         <Route
-          path='/shop'
+          path='/shoppong-cart/shop'
           element={<Shop setItems={setItems} />}
         />
       </Routes>
