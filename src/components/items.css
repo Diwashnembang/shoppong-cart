@@ -1,3 +1,7 @@
+#item-in-cart {
+  margin: 15px 0;
+  padding: 1rem;
+}
 .upadate-no-of-item input {
   all: unset;
   color: black;
@@ -43,9 +47,8 @@
   margin-top: 0.5rem;
 }
 
-@media screen and (min-width:750px){
-
-.selected-item-price {
-  max-width: 6vw;
+@media screen and (min-width: 750px) {
+  .selected-item-price {
+    max-width: 6vw;
   }
 }

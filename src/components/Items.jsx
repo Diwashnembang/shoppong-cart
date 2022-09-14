@@ -28,7 +28,7 @@ const Items = ({ item, setRemoveItem }) => {
   }, [noOfItems])
 
   return (
-    <>
+    <div id='item-in-cart'>
       <div className='selected-item'>
         <div className='selectd-item-img' data-testid='selectd-item-img'>
           <img src={`${item.src}`} alt={`image of ${item.name}`} />
@@ -59,7 +59,7 @@ const Items = ({ item, setRemoveItem }) => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
