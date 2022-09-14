@@ -1,68 +1,63 @@
 header #nagivation {
-    font-family: var(--primiary-font);
-    color: var(--text-color);
+  font-family: var(--primiary-font);
+  color: var(--text-color);
 }
 
 #home {
-    letter-spacing: 5px;
-    font-weight: 500;
-    text-align: center;
-    font-family: "Montserrat Medium";
-    margin: 1.3rem 0;
-    cursor: pointer;
+  letter-spacing: 5px;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'Montserrat Medium';
+  margin: 1.3rem 0;
+  cursor: pointer;
 }
 
 nav .shop {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 nav ul {
-    display: flex;
-    min-width: 100vw;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 4rem;
-
+  display: flex;
+  min-width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
 }
 
 nav ul li {
-    cursor: pointer;
-
+  cursor: pointer;
 }
 
-.cart{
-  cursor:pointer;
+.cart {
+  cursor: pointer;
 }
-@media screen and (min-width : 750px) {
-    header #nagivation {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-areas: ". titile . . . link link link";
-        column-gap: 40px;
+@media screen and (min-width: 750px) {
+  header #nagivation {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: '. titile . . . link link link';
+    column-gap: 40px;
+  }
 
-    }
+  header {
+    margin: 50px 80px;
+  }
 
-    header {
-        margin: 50px 80px;
-    }
+  nav ul {
+    grid-area: link;
+    margin: 0;
+    min-width: 100%;
+  }
 
-    nav ul {
-        grid-area: link;
-        margin: 0;
-        min-width: 100%;
-    }
+  #home {
+    grid-area: title;
+  }
 
-    #home {
-        grid-area: title;
-    }
+  nav ul li {
+    margin: 0 3rem;
+  }
 
-    nav ul li {
-        margin: 0 3rem;
-    }
-
-    .cart {
-        margin-right: 5rem;
-
-    }
-
+  .cart {
+    margin-right: 5rem;
+  }
 }
