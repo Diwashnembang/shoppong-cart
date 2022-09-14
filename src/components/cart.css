@@ -1,4 +1,5 @@
 #cart {
+  min-width: 100vw;
   position: absolute;
   top: 0;
   background-color: #f8f5f2;
@@ -12,12 +13,13 @@
 .slide-right {
   animation-name: slide-right;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
 }
 
 .slide-left {
   animation-name: slide-left;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes slide-right {
