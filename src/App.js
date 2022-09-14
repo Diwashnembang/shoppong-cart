@@ -24,7 +24,7 @@ function App() {
         />
       ) : null}
       <Routes>
-        <Route path='' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route
           path='/shop'
           element={<Shop setItems={setItems} />}
