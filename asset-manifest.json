@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/shoppong-cart/static/css/main.4b31810d.css",
-    "main.js": "/shoppong-cart/static/js/main.ecc034c3.js",
+    "main.js": "/shoppong-cart/static/js/main.48df16b9.js",
     "static/js/787.15846d51.chunk.js": "/shoppong-cart/static/js/787.15846d51.chunk.js",
     "index.html": "/shoppong-cart/index.html",
     "main.4b31810d.css.map": "/shoppong-cart/static/css/main.4b31810d.css.map",
-    "main.ecc034c3.js.map": "/shoppong-cart/static/js/main.ecc034c3.js.map",
+    "main.48df16b9.js.map": "/shoppong-cart/static/js/main.48df16b9.js.map",
     "787.15846d51.chunk.js.map": "/shoppong-cart/static/js/787.15846d51.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b31810d.css",
-    "static/js/main.ecc034c3.js"
+    "static/js/main.48df16b9.js"
   ]
 }
