@@ -31,7 +31,10 @@ const Items = ({ item, setRemoveItem }) => {
     <div id='item-in-cart'>
       <div className='selected-item'>
         <div className='selectd-item-img' data-testid='selectd-item-img'>
-          <img src={`${item.src}`} alt={`image of ${item.name}`} />
+          <img
+            src={process.env.PUBLIC_URL + `${item.src}`}
+            alt={`image of ${item.name}`}
+          />
         </div>
         <div className='selected-item-info' data-testid='selected-item-name'>
           <p>{item.name}</p>
