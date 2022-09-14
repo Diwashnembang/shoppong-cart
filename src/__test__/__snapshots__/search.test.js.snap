@@ -4,6 +4,7 @@ exports[`SearchProduct Component renders correctly 1`] = `
 <div>
   <div
     id="search"
+    style="min-height: 0;"
   >
     <section
       class="close"
@@ -39,12 +40,16 @@ exports[`SearchProduct Component renders correctly 1`] = `
           />
         </svg>
       </div>
-      <input
-        id="product-search"
-        name="search"
-        placeholder="Search product"
-        type="text"
-      />
+      <div
+        class="search-box"
+      >
+        <input
+          id="product-search"
+          name="search"
+          placeholder="Search product"
+          type="text"
+        />
+      </div>
     </section>
   </div>
 </div>

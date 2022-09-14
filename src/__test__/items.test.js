@@ -24,7 +24,7 @@ describe('Items component', () => {
     const nameElement = screen.getByTestId('selected-item-name')
     expect(nameElement.textContent).toEqual(mockItem.name)
     const priceElement = screen.getByTestId('selected-item-price')
-    expect(priceElement.textContent).toEqual(mockItem.price)
+    expect(priceElement.textContent).toEqual(`$ ${mockItem.price}`)
   })
 
   it('should add no of item by 1', () => {
@@ -74,14 +74,14 @@ describe('Items component', () => {
     const priceElement = screen.getByTestId('selected-item-price')
     userEvent.clear(inputElement)
     userEvent.type(inputElement, '3')
-    expect(priceElement.textContent).toBe('1200')
+    expect(priceElement.textContent).toBe('$ 1200')
   })
 
   it('should increse the price of the product by 2 when add is clicked one time', () => {
     const addElement = screen.getByRole('button', { name: '+' })
     const priceElement = screen.getByTestId('selected-item-price')
     userEvent.click(addElement)
-    expect(priceElement.textContent).toBe('800')
+    expect(priceElement.textContent).toBe('$ 800')
   })
 
   it('should change the number of items when the + button is clicked after typing ', () => {
@@ -109,7 +109,7 @@ describe('Items component', () => {
     userEvent.clear(inputElement)
     userEvent.type(inputElement, '2')
     userEvent.click(addElement)
-    expect(priceElement.textContent).toBe('1200')
+    expect(priceElement.textContent).toBe('$ 1200')
   })
 
   it('should decrease the price of the product when - is clicked after typing', () => {
@@ -119,6 +119,6 @@ describe('Items component', () => {
     userEvent.clear(inputElement)
     userEvent.type(inputElement, '4')
     userEvent.click(minusElement)
-    expect(priceElement.textContent).toBe('1200')
+    expect(priceElement.textContent).toBe('$ 1200')
   })
 })
