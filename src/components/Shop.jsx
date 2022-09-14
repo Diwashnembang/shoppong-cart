@@ -6,37 +6,37 @@ import Product from './Product'
 const products = [
   {
     id: '001',
-    src: 'public/assets/electronics/71Dc5Fh6kFL._AC_UY218_.jpg',
+    src: '/assets/electronics/71Dc5Fh6kFL._AC_UY218_.jpg',
     price: '400',
     name: 'Mac',
   },
   {
     id: '002',
-    src: 'public/assets/electronics/710mNDEecxL._AC_UY218_.jpg',
+    src: '/assets/electronics/710mNDEecxL._AC_UY218_.jpg',
     price: '1500',
     name: 'Iphone',
   },
   {
     id: '003',
-    src: 'public/assets/electronics/geforce-rtx-3080-ti.jpg',
+    src: '/assets/electronics/geforce-rtx-3080-ti.jpg',
     price: '5000',
     name: 'Graphic Card',
   },
   {
     id: '004',
-    src: 'public/assets/pants/614qJNN6NjL._AC_UL320_.jpg',
+    src: '/assets/pants/614qJNN6NjL._AC_UL320_.jpg',
     price: '180',
     name: 'Awesome Pants',
   },
   {
     id: '005',
-    src: 'public/assets/pants/51MCSj++j5L._AC_UL320_.jpg',
+    src: '/assets/pants/51MCSj++j5L._AC_UL320_.jpg',
     price: '400',
     name: 'Nice Pants',
   },
   {
     id: '006',
-    src: 'public/assets/shirts/615ENiyQ7UL._AC_UL320_.jpg',
+    src: '/assets/shirts/615ENiyQ7UL._AC_UL320_.jpg',
     price: '300',
     name: 'Comfy Shirt',
   },
