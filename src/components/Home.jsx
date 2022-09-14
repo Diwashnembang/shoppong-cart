@@ -15,7 +15,7 @@ const Home = () => {
           </Link>
         </section>
         <section className='main-product-image'>
-          <img src='/assets/electronics/geforce-rtx-3080-ti.jpg' />
+          <img src='public/assets/electronics/geforce-rtx-3080-ti.jpg' />
         </section>
       </div>
     </>
